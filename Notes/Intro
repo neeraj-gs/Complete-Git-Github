@@ -1,0 +1,130 @@
+Introduction to git and github
+It is very crucial and we have to master git as fast as possible 
+learn git over anyother techstacka s for remote work teh foirst thing they see is your github profile
+Sooner you learn the Better
+
+Course Topic
+	Most IMportant
+	Git
+		Core Functionality of Git
+			Intro to git
+			INstallation
+			GIt basics
+			COmmiting in detail
+			Branching
+			Merging
+		Next Level git
+			Diffing
+			Stashing
+			Undoing CHanges
+
+	Git Hub
+		Core Github
+			Github INtro
+			Fethcing and Pulling
+			Github Odds and ends
+			Collaboration workflows
+
+		next Level Github
+			Rebasing
+			Interactive Rebasing
+			GIt tags
+			GIt behind scenes
+			reflogs
+			Custom aliases
+
+Exercises - We ahve ot breathe git that is practice daily else it is really difficult
+	Do the Exercises at the end of the most sections
+
+Keep using never wwtch someoen use git for more use case understandings
+
+
+
+Module 1:
+Introduction to Git
+	What is Git?
+		it si a version control system[VCS]
+		Version control -- it is a s/w that tracks and manages files over time
+			as millions of contributors worling in parallel and making changes so we use versiuoncontrol ssytem
+		VCS aloows -- revisit earlier files , compare cahnges b/w changes , undo cahnges and a whole lot more
+
+	Git os one of most pop vxs. - clear winner as a vcs
+
+	it is a free and open source distributed vcs to handle every large project with efficiency and speed management of projects.
+
+
+	Visualization
+		track changes acrooss files
+		compare versions of a project
+		time travel back to old verison
+		revert to prev versinos
+		Collaborate adn share changes
+		combine changes betwen collaborators
+
+		Visualize:
+		There are diffrent Check Points to save our progress.
+
+		Ex:
+		write essay and we save diffrent fiels for diffrent versions and we would compare and seelc teh best one
+
+		Git helps to keep track of all the changes we do
+		with git we create checkpoints or save files, at diffrent phases and we add checpoints
+
+			we can also collaborate and do it
+		we can also have branches and create some other timeline or alternte
+			the main branch is still there we can then merge the brances also
+		Git helps amnage all and all the process can exist and make it better and compare also
+
+		We share those cahnges we do wthile working ont eh project
+
+
+History of Git
+	Linus Torvalds -- created git and linux
+		pro for open source projects
+	earlier bitkeeper was used , so they started changing money at the end .
+
+git - global information tracker
+
+
+
+Who uses Git? 
+	Engineers and Coders , Developers
+	Companies
+	Entreprenaurs
+	Scientists 
+	Writers
+	 Basically anyone can use whoever wants to have saved changes and can navigate between teh changes and also collaborate with others.
+
+
+Git Vs Github
+	Git is Vcs that runs on local machines , no need an account or internet
+
+	Github is a service that hosets the git repositorie scloud and makes it easier to collaborate on ther people.
+	We have to have an account and we can share the projects online and collaborate and vice versa.
+	whenever we wnt to collaborate then we can easily use githubnandd add ons and modify and share back  and work together.
+
+
+Module 2:
+
+Installation and Setup:
+	It is always suggested to change to a linux / Ubuntu based Operating system compared ot a Windows OPerating System
+
+
+Git was creted as a command - line tool . to use it we run various git cmds on unix shell.
+	it is the core of git and not beginner friendly 	
+To Overcome thsi we ahve GUI's. allow people to use visualized git to a terminal.
+	there are a lot of GUI's these days -help visualize and interacat with git instead of a terminal
+
+sudo apt-get install git -- to install git onto linux
+
+
+It is good to master the Commang line as ocmpare dot gui as most of the develoer use these as compare dot the GUI.
+
+Just to visually illustraet teh conceps we see GUI
+	we also translate and can be seen using gui.
+MOst Macs have pre-installed gits - 
+	we have to have a higher versions of git
+We jsu tuse teh terminal in mac and Linux
+
+
+
