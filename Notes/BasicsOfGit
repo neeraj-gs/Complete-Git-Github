@@ -1,0 +1,82 @@
+The Very Basics of Git
+
+Repository[Repo]
+It is a workspace which tracks and amnages files within a folder
+	anytime we want to use git we need to create a repo , we can have any number of repos on our machine
+We have to initialise a git repo in the folder we wnat to
+Diffrent repos have diffrent histories or logs
+
+Commands:
+git status -- gives information on the current status of the git repos
+	it works only in a git repo
+
+git init -- initialize a new repo whereever we are in the terminal
+	we do this once per project . initialise in teh top level folder
+
+Whenever we run a git init or initialize a git repo a new directry called .git is created as .folders are hidden
+	rm -rf .git --- removes the entire git history of the project and also removes teh initialized project
+
+Common Issue:
+	Git tracks a directry and all the sub directry
+	top down folders are nested and tracked by git
+
+	Never do init inside of an existing repository
+		Difficult for git to track these.
+
+Commiting Workflow:
+	It is the most important git feature
+	Adding checkpoints to project means commiting it
+		Any message along with snap is the commit
+
+Working Directry
+Make Changes in a directry
+
+Staging Area
+Stage all the changes of untracked files
+
+Commit the changes
+
+git add - staging commands that is all the untracked fies are tracked adn slected before making a commit
+	Simialr to grouping the files are making the commit for these
+
+	Commands:
+		git add file1 file2
+		git add . -- adds all untracked files
+
+git commit
+use dot make a commit from the staging area that we grouped them into
+
+	Commit message should summarize changes made at that particualr commit
+
+	git commit -- it will open an editor to add the mesage
+	git commit -m "mesage we want to provide" -- add directly without asking msg as a secondary step
+
+
+git log
+	it jsut retrieves info of log of commits
+	For each commit
+		Author is present -- it is done using git config
+		Date is present
+		Commit message at the bottom is present
+	commit Hash  -- is also rpesnt
+		the latest commit is present ont hte top 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
