@@ -1,0 +1,6 @@
+This is just a demo file where i make changes to this file and pretend i forget to stage this file.
+But i stage other files 
+
+We can use ammend to add or include this file or even chagne the commit messge also 
+
+But ammend is just for the commits which are previousluy done or jsut one commit ahead of it.
