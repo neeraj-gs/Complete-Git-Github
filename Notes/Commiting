@@ -1,0 +1,118 @@
+Commiting In Detail in Git
+
+The git docs
+Git documnetatoin - may or may not refer 
+git-svm.com -- to check the documentations
+
+There are diffrent options for a command this can be found in the git docs
+There is also a book where we can learn more and in detail
+
+Always have your commits atomic
+	when possible, a commit should encompass a single feature ,change or fix.
+
+	Each commit should be wroked or written for each single change.
+
+Only the staged ones are commited and untracked or unchanged files do not get commited
+
+//Breaking commits into indivisible units or pieces and make it better.
+
+Writing Commit messages
+	Present tense - -imperative style -- 	ordering to make changes
+
+	Past tense -- what we have already done
+It really depends on what you want to do
+
+
+Escaping VIM and configuring Git's Default Editor
+	Whenever we jsut write git commit w/o optins a vim or a default editor opens
+		taht is built into the terminal
+
+IF we need to type a large commit mesaage then we need to use some editor and cant use -m so we ned to conifgure to opena  a editor that has to be done.
+
+See the documnetation and add change it to your desired code editor
+
+
+Logs
+git log
+Gives the list of commits
+
+Git commit hashes are required to make cahnges
+
+Options for git log
+--oneline -- gives shorter version of the ahsh
+
+--pretty=[options]
+
+Gives one line of each commit message 
+
+
+AMENDING COMMITS
+Fixing the commit messages
+allwos to ediut,reuse,update previous commit
+Edits only 1 commit previous
+
+git add file1 -- just stage the file
+git commit --amend = opens in editor and we can edit the commit messages
+
+Include files / changes or redo teh commit mesage and make changes
+
+
+
+IGNORING FILES
+Files /directries that has to be ignoreed or hidden by git 
+API's all have to be hidden along with the credentials
+OPerating system files
+Log files or any output files all should be removed
+Dependencies and Packages need not be tracked by git
+
+.gitignore file is created 
+Put in root of repo
+Git looks fo rthe fiels and inside of it we can tell git what all to ignore
+
+
+In a Repo
+run npm init -- to get some packages and ignore this
+The files that need not or shoulod not be tracked is all untracked 
+	Create a new file called .gitignore
+	write the files or patterns to ignore all files
+	To tell its a  dir we have to use a / at the end of folder name
+
+Any changes we do in the ignore file it will not show unstagged changes or does not track any of the follwoing
+
+gitignore.io --- tells all the pattersn where we can include all and then add them to make it better .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
