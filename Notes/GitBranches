@@ -69,7 +69,11 @@ IF THERE IS A FILE THAT NO OTHER BRANCHES HAV ETHEM THEN THERE IS NO PROBELM
 
 
 git branch -d <branch_name> -- deletes a branch
+<<<<<<< HEAD
 	Note:: we cant delete the branch we are currently on that is if HEAD os on the branch that we wnat to delete we cant do it
+=======
+	Note:: we cant delete the branch we are currently on that is if HEAD os on the branch that we wnat to delete we cant do iti
+>>>>>>> 4plus2SOngs
 
 		we cant delete even if we have m=not merge the branch if forcefully want to delete it then we have to use -D option
 
@@ -82,7 +86,11 @@ git branch -d <branch_name> -- deletes a branch
 	git branch -m <new_branch_name>
 
 
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 4plus2SOngs
 
 
 
