@@ -1,0 +1,91 @@
+Git Branches
+
+When we make a commit each commit gets a hash value , that is unique each commit references atleast one commit referrencing before it
+
+In real contexts there are multiple peoplw contributing on diffrent features and functionality
+
+Bracnhes
+	Alternative path or timeline for a project
+If we make changes on one bracnh they do not impact other branches unless we merge thte changes of the branches
+
+In git we always work on a branch
+In any repository , there is a first or default branch master
+
+Master branch -- default bracnh when we create a git repository
+	Source of truth , or the officcial branch for their codebase.
+
+In 2020 github default branch name was changed frommaster to main
+	git is still master and not main
+
+Master branch is like a main branch that has to be always running and we can branch out and do diffrent functionaities and then do it
+
+
+HEAD -- it is a pointer that points to the current branch reference
+	Branches are like bookmarks in a book
+		At any given time only one of the bookmark can be opened
+Current viewing is the HEAD
+
+If we switch branch the head points to latest commit on thte new branch we switched
+
+
+Branching Commands in Git
+git branch -- to view all branches in the current repo
+	* on the branch indicates we are currently on that branch
+
+
+Creating Branch -- git branch <branch_name>
+	Creates new bracnh based on head pointer [i.e it creates a branch from teh pointing head]
+
+	git checkout -b <branch_name>
+
+
+Switching Brancch - git switch <branch_name>
+	git checkout <branch_name> -- older version
+	git branch <branch_name>
+
+When we are on the older branch we dont see the commits we ahve done on the new branch
+	But when we are ona  new branch we can easily see the old cimmits as well as the new commits
+
+git commit -a -m "" -- ADDIND AND COMMITING ALL UNSTAGED CHANGES
+ 
+WHEN WE KEEP SWITCHING BRANCHES WE CAN SEE TAHT CHAGNES HAPPEING IN THE FILE AS WELL
+
+instead of creating and then switching we can do both together at once
+
+git switch -c <bracnh_anme>
+
+
+Switching branches with Unstaged changes
+	Branches does not exist on 1 single file but there are multiple files and not a single file
+
+	When it is not commited and we cahge the branches it will be lost 
+		so we have to either stash them or commit these before switching branch
+
+IF THERE IS A FILE THAT NO OTHER BRANCHES HAV ETHEM THEN THERE IS NO PROBELM
+	ADD AND COMMIT CAHG ES BEFORE SWITCHING
+
+	Unstagged changes comes with us while switching when there is no conflicets or taht change is only in taht branch and no other branch
+		But when ther eis a same file present in multiple beanches then there is a conflict so before we switch we hav eto first save it
+
+
+git branch -d <branch_name> -- deletes a branch
+	Note:: we cant delete the branch we are currently on that is if HEAD os on the branch that we wnat to delete we cant do it
+
+		we cant delete even if we have m=not merge the branch if forcefully want to delete it then we have to use -D option
+
+	git branch -D <branch_name> //deletes the branch even if we did not merge any
+
+	When we are connecting with github we have to rename master to main beofre pushing it
+
+
+	We hav eot be on the bracnh to rename it
+	git branch -m <new_branch_name>
+
+
+	
+
+
+
+
+
+
