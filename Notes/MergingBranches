@@ -1,0 +1,81 @@
+MERGING BRANCHES
+
+With branches we can work on diffrent functionalities in parallel 
+and then combine all together into a single feature
+
+git merge -- command to merge a bracnh
+
+No experiments are done on the main or master branch
+	We always merge to the head bracnh or the branch where we are presnt on
+
+First move over to the main brancch
+THen merge the branch
+
+there are diffrent pointers for diffret branchers
+	to merge we just push head to till new branch
+
+Fast Forward Merge
+	No additional work on the main branch
+		We just add additional commits on a branch and then to catch u[p we just move the pointer forward
+
+It shows fast forward if it was a fast forward merge
+	WE also get the extra other branch commits also to add to it with old commits of original branch
+
+
+Git kraken is a GUI git terminal where we can easily try and visualize diffrent branches and our workflow
+
+Anything ahead of the main branch has to be comited and made available to the main ones
+
+
+Not all merges are fast forward merges
+	If there is already some other commits done on the master or main but the branch doe snot have so no fast-forward
+
+
+NON - CONFLICTING MERGING
+
+If not a fast forward merge
+	1.merge commit is generated
+		git makes a commit on tthe for us ont he branch we are merging into bthat is reciepient branch
+
+
+		When we do some work on main or master but we are still not known about the changes ddone 
+
+	So now if we want to merge but main is already ahead of some commits
+
+	now if we merge a branch a default editor is opened and a merge commit is auto done by git
+	we can aslo add commit msg we want
+	just close it the commit is completed
+
+
+
+MERGING CONFLICTS 
+ Depending on specific changes  , if same file is changed by diffrent files then there is conflict on which branch change hs to be kept
+
+Manually resolving it is the only option
+
+Resolving conflicts
+Git tells us there is a conflict
+OPen file and check if there are conflicts
+Remove conflict markers and keep only mesage
+Commit the changes after changing fiels
+
+The content b/w == and >>>> is merged and considered 
+
+
+RESOLVING CONFLICTS
+	When same file is chagned in diffrent branches a conflict arises between them
+
+	Go to editor it does the resolver problems in the file we are usign
+
+	Just remove markere sand and keep whatever we want
+
+	Add changes and then commit and then the result is what we have changed
+
+
+
+
+
+
+
+
+
