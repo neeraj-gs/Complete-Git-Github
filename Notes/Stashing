@@ -1,0 +1,79 @@
+Stashing in Git
+
+Why do we need this?
+	when we have some uncommited work in some branch and we switch ed ot other branch
+		1.changes come with me and show up in master branch
+		2.git does not allow to switch to new branch
+
+we can stash cahnges instead of commiting it 
+there is unstaged files in a branch and we need to move to another branch say
+	If no conflicts -- comes with us to main branch 
+After commiting these does not reflect in the main branch
+
+
+	If there are conflicts that is if same file is changed
+
+When there is a conflict we ahve to commit the changes first or we have to stash the changes
+
+stash -- saving changes without commiting those cahnges
+git stash 
+	helps younsve changes that are not ready to commit , you can stash changes and then come back later
+it will take all uncommited changes [staged and unstaged] and stash them
+
+	git stash or git stash save
+
+git stash pop 
+	remove most recently stashed changes in your stash and reaplly them to the working copy
+
+
+we dont loose the changes it will be stashed in a place and then we can easily pop them later and then we can re-aplly those changes
+
+afyter stashing working tree is clean
+then we can aplly the changes anywhere we want and pop htese
+	takes most recently stashed in pop command
+
+git stash apply
+	these are less freequrntly used the above 2 are the most used
+
+aplly whatever instash and aplly it but the stash stays and we cann aplly the stash anywhere we dont remove thye changes
+	In pop w will remove the chanegs and can be apllied only once to a working tree
+
+If there is a conflict in stashing also then its working is same as working conflicts in the branchs and we can do it simialr to that way
+
+pop -- pops the cahnges and gone once apllied
+apply-- stays in it and then changes based on it
+
+
+MULTIPLE STASHES
+we can stack multiple stashes
+all the stashed in the order you added them
+
+when we stash multiple cahnges 
+	they are stored in order 
+
+git stash list -- gives all the stashes 
+it gives wip -- work in progress
+	git stash pop -- takes the first added one and not the stack one
+
+	to reference it
+
+git stash apply stash@{n} -- n in the list is given and we can aplly these
+
+we can have multiple things in stash at once and we can easily use and aplly whichever changes we want
+
+	In real world we will do only git stash save and git stash pop thats it
+
+
+DROPPING AND CLEARING CHANGES IN THE STASH
+git stash drop <stash_id>
+
+git stash clear -- removes all hte stashes
+
+	In real world
+		git stash or git stash save
+		git pop
+	These 2 are the only required ones and not the other ones
+
+
+
+
