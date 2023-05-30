@@ -1,0 +1,112 @@
+GIT DIFF
+It is a command used to compare changes done
+
+we use this command to view the changes done between commits,branches files ,working directry and more
+
+Doe snot impact anythingn to the repo and just informative command
+
+Commands
+
+git diff
+	Lists all the changes in the working directry that are not staged for the next commit
+
+	o/p: we get diffrent outputs with red ,green + and -
+
+
+Reading Git Diffs outputs
+diff --git  //these are files that are being compared that is old file and new file that is the same file 
+	git calls one file as a and other as b
+
+index  //it si aa meta data and each fiele gets its oqn has
+
+2 line of markers
+a file with ---
+b file woth +++
+
+Chunks
+it shows the part changed and teh context before and after
+Mutiple chunks can als be present identified by @@
+2 sets of numbers for a fiel with - and 2 for b file with +
+	file a , -start,lines extracted
+
+
+Changes
+Fiels superimposed
+- == changes from file a
++ == changes from file b
+
+nothing = presetn in botht the files
+skip - while counting b and skip b while counting a
+COMPARES STAGING AND WORKING DIRECTRY
+
+
+
+1.VIEWING UNSTAGED CHANGES
+COMPARES STAGING AND WORKING DIRECTRY
+git diff
+
+2.VIEWING WORKING DIRECTRY CHANGES
+lsits all cahnges in the working tree since last commit that is head
+git diff HEAD
+	we see the changes done since our last commit 
+
+dev/null -- nothing to compare before
+HEAD SHOWS ANYHTING NEW IN WORKING DIRECTRY SINCE THE LAST COMMIT AND ALL FIELS ARE SHOWN
+
+
+3.VIEWING STAGED CHANGES
+it will list all the changes between staging area and our last commit
+ONly staged chagnes are shown and nothgin else
+	git diff --staged
+	git diff --cached
+
+
+4.VIEWWING SPECIFIC OR DIFFING SPECIFIC FILES
+	we can view the changes within a specific file by providing git diff with a file name
+
+	git diff <filename>
+	git diff HEAD <filename>
+	git diff --staged <filename>
+
+	can also add multiple files by specifying file name after a space
+
+
+
+5.COMPARING THE CHANGES ACROSS THE BRANCHES
+LIST CHAGNES BETWEEN THE TIPS OF BRANCH1 AND BRANCH2
+
+	git diff branch1..branch2
+			OR
+	git diff branch1 branch2
+
+order will amtter 
+- and + comapring fiels a and b thats it
+Order will matter as - and + will increase
+	shows all the files that are cahgned
+
+
+6.COMPARING CHANGES ACROSS COMMITS
+	to compare any 2 comits in the past we can use same syntax as above 
+	with commti hash of it
+
+	git diff commithash1..commithash2
+	order will matter
+		all changes between all fiels kis displayed 
+		similarly we can also specify a songle file also for branches and commits as well
+
+
+GUI WILL DEFINITELY HELP WHEN WE ARE WORKING WITH VERY LARGE PROJECTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
