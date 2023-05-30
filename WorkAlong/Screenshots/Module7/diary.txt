@@ -2,6 +2,7 @@ This is a demo to show the working of Stashing
 
 
 
+
 I love you
 I love you
 
@@ -11,3 +12,7 @@ I hate you
 
 
 I love you
+I hate you
+I hate you 
+I hate you
+
