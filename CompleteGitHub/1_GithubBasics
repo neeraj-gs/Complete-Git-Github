@@ -1,0 +1,177 @@
+GIT HUB BASICS
+
+IT IS A HOSTING PLATFORM FOR GIT REPO'S
+WE CAN ACCESS AND SHARE THEM AND ALSO COLLABORATE ANYWHERE AND AT ANYTIME
+
+IT SI S ASERVICE THAT HOSTS GIT REPOS INT HE CLOUD AND MAKE IT EASY TO COLLABORATE
+ONLINE PLACE TO SHARE WORK DONE USING GIT
+
+COLLABORATION ADN SHOWCASING OF PROJECT IS THE MOST IMPORATNT FEATURE OF GITHUB
+
+GITLAB,BITBUVKET AND GERRIT ARE OTHER HOSTING PLATFORMS BUT GITHUB IS THE HIGHEST ONE WITH USERS
+	IT IS OPEN SOURCE AND FREE
+
+GIVING YOUR CODE A HOME IN THE CLOUD
+
+WHY GITHUB?
+	COLLABORATION
+	OPEN SOURCE PROJECTS
+	REMOTE WORK
+	EXPOSURE - SHOWCASE YOUR PROJECTS , CONTRIBUTE TO OTHERS PROJECTS,
+	STAY UPTO DATE - STAY ACTIVE IN CONVERSATIONS AND WE CAN SEE UPDATOINS 
+
+
+CLONING GITHUB REPOS WITH GIT CLONE
+	CLONING - GETS A REPO FROM CLOUD INTO THE LOCAL MACHINE
+	git clone <url> -- 
+	note::make sure you are not inside of a repo while cloning
+
+All commits fiels are all present in our local machine when we clone we basically get the entire git history
+
+url : can be taken from code - clone 
+or we can take the url on tab and git clone url
+
+Cloning automatically creates or initialtes a repo we do not have to create git init
+Any one can clone a repo from github
+We need permission to push cahnges to the repo of others repos
+
+
+Cloning non -github Repos
+	no tonly github can work with any hosting repository
+
+gitlabs - simialr to github where we can clone it same as a git hub
+
+
+
+GITHUB SETUP
+
+Register if a new User.
+Configuring SSH Keys
+	we need ot be authenticated to do operations on github from command line 
+So we generate this ssh key so taht we can easily push it
+
+
+Creating First Github repo
+OPtion 1:Existing Repo
+	Createa a new repo on github , connect local reapo using remote , pushup changes to github
+
+Option 2: Start from scrathc
+	Craete a new repo on github , clone that repo onlocal machine , do work , oush to github
+
+
+Remote is a destination url , label for a url where we can fetch or push or pull the code
+git remote -v = lists remotes available 
+If cloned repo and use git remote -v == we see name of remote=origin and links[url from where the repo is present]
+
+Adding a new remote
+	git remote add origin <github_URL>
+anytime we tell origin remember the url
+we can use any name instead of origin
+	Commonly used remote name: origin
+
+git remote rename <old_name> <new_name>
+git remote remove <name>
+
+It is commont ot have multiple remotes when working on a open source projects
+
+
+git push <remote> <branch>
+we dont have to be on the branch everytime
+Ig password is askred: set ssh key so that no need ot enter password everytime we push
+
+
+Optoin 1:
+	Create a new Repo on Github along with description
+	Public / Private
+	Create Repository
+	Terminal
+	git remote add origin url
+	git remote -v = we  see fetch and push remotes
+	make changes what ever you want to
+	Pushing changes into a github repo
+	git push origin main //we always have to rename master with main as github has the default branch as main
+	refresh github after pushing the changes are reflected on github as well
+
+
+Touring a Github Repo
+Files are visible and we can inspect and read
+WE can switch branches and see the changes[gives info in the cmomit sin the branches]
+Commits on each of them are visible
+See all commits and when we vclick on commit we can switch and view how the project was[commits for diffretn ranches can also be seen]
+
+
+Note:
+If we have diffrent branches
+	we have to push all branches and their chages indivitually for each branch
+
+Push Working
+	branch locally vs Branch on Github
+
+We have to first create a init repo before we addd a remote but for the clone no need to add it
+
+When we create a master push command
+	we see main and master branches on the github 
+
+
+git push <remote> <localbranch>:<remotebranch>
+	to push a local branch into a remoet branch that is presetn on github
+
+local->remote
+	we see that frommlocal to another branch in destinatin remote is pushed
+
+git push -u origin main
+u means upstream , link connecting to the local branch to a branch on github 
+	next time we  no need to specify if we have configered upstream for main branch
+
+It is like recalling master branch is connected to origin
+	--set-upstream or -u
+
+Note:
+Local branch1 remembwers remote branch1 whenever we just push it we can easily do these .
+
+	Ohter local branches cannot be used if not set with -u optoin
+
+
+
+Option 2:
+	create a new repo on github
+	Clone it down to your machine{automatically configures remote for us}
+	Make changes on ypur loal machine
+	Push the works onto your machine 
+
+
+Main vs Master
+Guthub started to rename master from main
+When we create a new repo if we dont add a readme file -- it wills et main as the default branch
+If no initialisation it has no branches and we can use the branch name
+If some initialisation then the branch will deafult to a branch called main
+
+jsut rename bracnh from master to  main to avoid confusions
+	git branch -M main - -changes master to main branch
+while renaming we have to be on the branch we are renaming
+
+Settings --branches and select the default  bracnh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
