@@ -139,7 +139,9 @@ Which one to use?
 revert is better as w can go rverse with having all teh cchagnes and the commits in
 
 
-
+In git reset after we reset we dont see any cahgnes int eh file
+But as soon as we create a new branch we see the untracked files and the changes come along woth it
+Thne we can commit it on the new branch we created .
 
 
 
