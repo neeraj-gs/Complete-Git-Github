@@ -1,0 +1,164 @@
+FETCHING AND PULLING
+GETTING CHANGES FROM THE GITHUB INTO OUR SYSTEM
+
+MASTER
+	A REGULAR BRANCH REFERENE CAN ACT AS ANY OTHER SIMIALR BANCHES WEVE SEEN TILL NOW
+
+ORIGIN/MASTER
+	THIS IS A REMOTE TRACKING BRANCH,ITS A REFERENCE TO THE STATE OF THE MASTER BRANCH ON THE REMOTE.
+	WE CANT MOVE IT MYSELF , ITS LIKE A BOOKMARK POINTING TO LAST COMMIT
+	<remote branch>/<main_branch>
+
+
+when we clone some repo 
+we get a repo automaticalyl adn also sets a main tracking branch thats holds the most recently commited branch
+	git branch -r // to see the branch references and remote branches
+
+remote branch does not affect or doe snot chagne as it will stay where last ocmmit was prestn in the repo
+	the changes we make will improve on and progress ahead
+
+you rbranch is ahead of origin/main by n commits -- say we ahve made n commits from the branch we cloned from repo
+
+	git checkout origin/master - -we will go where the project and how was it when we cloned it
+
+
+We have to push it to ge tthe commits which are ahead into the branch
+
+
+
+WORKING WITH REMOTE TRACKING BRANCHES
+If there are multiple branches in the github repo
+	when we clone the repo that has multiple branches
+
+we will be first on the repo
+
+By deafult when we clone it is sonnected ot remote branch by a deafult branch
+main -> origin/main //conencted earlier only
+
+
+If we want to workout on someother branch 
+we have ot checkour to that branch and then we are in detached head sate
+
+we can create new branch and work on it
+
+git switch puppies // git automatically detects if a new bracnh and remote branch is same then it will automatically track the other branch
+simialr to ho wmain->origin/main
+
+git switch <remotebranch> //we have a branch that has a relationship as 
+<newbranch> -> origin/remote branch
+
+Older way
+git checkout --track origin/branch_name
+
+	jsut git switch and we move and can start working onthat branch where we want to
+
+jsut like main we can push main into other rbanches as we want to
+
+may not exist locally git will automatically set it up and senf it to you
+
+
+FETCHING AND PULLING
+
+Say we jsut cloned a repo form github
+we do some work and also work with collaborators and those collaborators ahve already pushed some on github but we ahve not having on local comp
+
+Git fetch  and git pull
+	2 commnds ot get new commits from github
+
+git fetch -takes changes from github into a local repo and not a working directry
+	doneload chages from remote repo and not integrated into our files
+
+git fetch <remote>
+remote defaults to origin
+	it fetches branches and history from a specific remote repository.it only updates remote tracking branches
+
+
+git fetch <remote> <branch>
+	to just fetch from one branch
+
+In fetching remote branch will update to the altest one
+
+the local branch is untouched 
+	we have jsut downlaoded and not integrated to teh work we ahve done
+
+
+Fetch is done when there is some chagnes by collaborators and that is not available on our local changes
+
+When we push up cahges from their own lcoal repo cha ges are seen on github but not presnr in out local one
+
+
+git fetch origin // to get all cahnges
+git fetch origin branch //to get changes of particualr branch
+
+git status
+	we see  out rbach is behinfd n commits so we can come to know it was updated
+
+origin/branch is now pointitn gto a new place and we dont have it in our local repo
+
+	we cab checkout and see the changes
+
+To integrate chagnes we have to use PULL COMMAND
+
+GIT PULL IS USED OT UPDATE OUR LCOAL BRANCH
+
+Fetching is also use dot find if some new branches were created or not 
+	Local repo knwos about it whne we ftech
+
+git pull is similar ot fetch but pull will also updates our HEAD or working directry branch
+
+git pull = git fetch + git merge
+
+git pull <remote> <branch>
+
+Where we run git pull matters and on that branch the changes are merged onto teh current branch
+
+
+pulls can result in conflicts and we can resolve conflicts simialr to normal merges
+
+
+If no mege conflicts easy to pulla and merge
+If there are merge conflicts
+	If changing same fiels
+
+
+before we push alwsy pull and check if there are any conflcits
+	Go to file and and see and keep chagnes what we want and then push it
+
+Always pull down first before we push something onto github
+
+
+
+A SHORTER SYNTAX FOR GIT PULL
+git pull // no need ot specify remote or branch as well
+	remmote defaultsto origin
+	branch defaults to current branch we are on
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
